@@ -210,12 +210,12 @@ leech_help_string_telegraph = f'''<br>
 '''
 if LEECH_ENABLED:
     help = telegraph.create_page(
-        title='Helios-Mirror & Leech Help',
+        title='ASI Mirror & Leech Help',
         content=mirror_help_string_telegraph + leech_help_string_telegraph,
     )["path"]
 else:
     help = telegraph.create_page(
-        title='Helios-Mirror Help',
+        title='ASI-Mirror Help',
         content=mirror_help_string_telegraph,
     )["path"]
 
@@ -223,7 +223,7 @@ else:
 if user_id == OWNER_ID:
     try:
         help = telegraph.create_page(
-        title='Helios-Mirror Help',
+        title='ASI-Mirror Help',
         content=mirror_help_string_telegraph + leech_help_string_telegraph + sudo_help_string_telegraph,
     )["path"]
     except Exception as e:
